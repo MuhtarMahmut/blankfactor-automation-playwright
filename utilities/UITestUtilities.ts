@@ -21,10 +21,6 @@ export const test = base_test.extend({page: async ({ page }, use: Function) => {
         await page.goto(`${process.env.UAT}`);
         break;
 
-      case "PROD":
-        await page.goto(`${process.env.PROD}`);
-        break;
-
       default:
         await page.goto(`${process.env.TEST}`);
     }

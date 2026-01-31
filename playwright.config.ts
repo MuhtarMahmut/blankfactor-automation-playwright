@@ -20,12 +20,11 @@ export default defineConfig({
   projects: [
    
     {
-       name: 'Google Chrome',
-       use: { 
-        ...devices['Desktop Chrome'], 
-        channel: 'chrome',
-       // viewport: { width: 1800, height: 1000 },
-        },
+      name: 'chromium',
+      use: { 
+        ...devices['Desktop Chrome'],
+        viewport: {width: 1900, height: 1080} 
+      },
     },
 
   /*
@@ -81,7 +80,6 @@ export default defineConfig({
       name: 'Mobile Safari',
       use: { ...devices['iPhone 15'] },
     },
-
 */
     
   ],

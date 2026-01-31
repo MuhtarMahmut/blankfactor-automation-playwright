@@ -56,7 +56,7 @@ blankfactor-automation-playwright/
 
 4. **Configure environment**
    
-   Create `.env` file and edit it with environment variables:
+   Create `.env` file and edit it with the necessary environment variables:
    ```env
    ENVIRONMENT=PROD
 
@@ -64,7 +64,6 @@ blankfactor-automation-playwright/
    STG=stag_environment_url
    DEV=dev_environment_url
    UAT=uat_environment_url
-   PROD=prod_environment_url
    ```
 
 ## Running Tests
