@@ -28,4 +28,5 @@ test("Verify contact page title and url", async ({ page }) => {
 
   console.log(`Contact page URL: ${await contactPage.getUrl()}`);
   console.log(`Contact page Title: ${await contactPage.getTitle()}`);
+  
 });

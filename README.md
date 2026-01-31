@@ -1,0 +1,91 @@
+# Blankfactor Automation - Playwright
+
+A UI automation testing framework for the Blankfactor website, built with Playwright and TypeScript.
+
+## Tech Stack
+
+- **Playwright** v1.58.1 - Browser automation framework
+- **TypeScript** - Type-safe test development
+- **Node.js** - Runtime environment
+- **dotenv** - Environment configuration management
+
+## Project Structure
+
+```
+blankfactor-automation-playwright/
+├── pages/                      # Page Object Model classes
+│   ├── BasePage.ts            # Base class with common page methods
+│   ├── HomePage.ts            # Home page interactions
+│   ├── ContactPage.ts         # Contact page verifications
+│   ├── IndustriesPage.ts      # Industries page navigation
+│   └── RetirementWealthPage.ts # Retirement & Wealth page actions
+│
+├── tests/                      # Test specifications
+│   
+├── utilities/                  # Test utilities & helpers
+│   └── UITestUtilities.ts     # Custom test fixture with environment setup
+│
+├── .env                        # Environment variables (not tracked)
+├── .env.example               # Environment template
+├── playwright.config.ts       # Playwright configuration
+└── package.json               # Dependencies & scripts
+```
+
+## ⚙️ Setup Instructions
+
+### Prerequisites
+- Node.js (v18 or higher)
+- Visual Studio Code (Recommended)
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Install Playwright browsers**
+   ```bash
+   npx playwright install
+   ```
+
+4. **Configure environment**
+   
+   Create `.env` file and edit it with environment variables:
+   ```env
+   ENVIRONMENT=PROD
+
+   TEST=test_environment_url
+   STG=stag_environment_url
+   DEV=dev_environment_url
+   UAT=uat_environment_url
+   PROD=prod_environment_url
+   ```
+
+## Running Tests
+
+### Run all tests
+```bash
+npm run tests
+```
+
+### View test report
+```bash
+npm run report
+```
+- Use the scripts in `package.json` file to run tests with different options
+
+## Key Features
+
+- **Page Object Model (POM)** - Web-page elements and actions
+- **Environment Management** - Multi-environment support (TEST, STG, DEV, UAT, PROD)
+- **Custom Test Fixtures** - Automated navigation and cookie acceptance
+- **Rich Reporting** - Playwright HTML report
+- **Retry Logic** - Configured to retry failed tests
+- **Parallel Execution** - Tests can run in parallel with multiple workers
+- **Screenshot, Trace and Video Recording** - Automatic capture on test failures
