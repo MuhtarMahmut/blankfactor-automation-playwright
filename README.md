@@ -4,9 +4,9 @@ A UI automation testing framework for the Blankfactor website, built with Playwr
 
 ## Tech Stack
 
-- **Playwright** v1.58.1 - Browser automation framework
-- **TypeScript** - Type-safe test development
-- **Node.js** - Runtime environment
+- **TypeScript** - Programming language
+- **Playwright** - Browser automation framework
+- **Node.js** - For build tool
 - **dotenv** - Environment configuration management
 
 ## Project Structure
