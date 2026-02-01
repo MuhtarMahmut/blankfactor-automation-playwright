@@ -7,7 +7,7 @@ import { RetirementWealthPage } from "../pages/RetirementWealthPage";
 test("Verify contact page title and url", async ({ page }) => {
 
   let homePage = new HomePage(page);
-  await new HomePage(page).navigateToIndustriesPage();
+  await homePage.navigateToIndustriesPage();
 
   let industriesPage = new IndustriesPage(page);
   await industriesPage.clickRetirementWealthLearnMoreButton();

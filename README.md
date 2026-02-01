@@ -58,7 +58,7 @@ blankfactor-automation-playwright/
    
    Create `.env` file and edit it with the necessary environment variables:
    ```env
-   ENVIRONMENT=PROD
+   ENVIRONMENT=TEST
 
    TEST=test_environment_url
    STG=stag_environment_url

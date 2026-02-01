@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "tests": "npx playwright test  --headed",
+
+    "tests-headed": "npx playwright test  --headed",
+    "tests-headless": "npx playwright test",
+
     "test-tag": "npx playwright test --headed --grep @tag",
     "test-smoke": "npx playwright test --grep @smoke",
     "report": "npx playwright show-report"
