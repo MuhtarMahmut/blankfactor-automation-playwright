@@ -31,7 +31,7 @@ blankfactor-automation-playwright/
 └── package.json               # Dependencies & scripts
 ```
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 ### Prerequisites
 - Node.js (v18 or higher)
