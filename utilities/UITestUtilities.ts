@@ -2,7 +2,7 @@ import { test as base_test, expect } from "@playwright/test";
 import { HomePage } from "../pages/HomePage";
 
 //Extends the base test with custom UI setup.
-export const test = base_test.extend({page: async ({ page }, use: Function) => {
+const test = base_test.extend({page: async ({ page }, use: Function) => {
 
     switch (process.env.ENVIRONMENT as string) { // navigates to url
       case "TEST":
@@ -33,4 +33,4 @@ export const test = base_test.extend({page: async ({ page }, use: Function) => {
   },
 });
 
-export { expect };
+export { expect, test };

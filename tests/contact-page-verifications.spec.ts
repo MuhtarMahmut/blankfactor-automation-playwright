@@ -4,7 +4,7 @@ import { HomePage } from "../pages/HomePage";
 import { IndustriesPage } from "../pages/IndustriesPage";
 import { RetirementWealthPage } from "../pages/RetirementWealthPage";
 
-test("Verify contact page title and url", async ({ page }) => {
+test("Verify contact page title and url @wip", async ({ page }) => {
 
   let homePage = new HomePage(page);
   await homePage.navigateToIndustriesPage();

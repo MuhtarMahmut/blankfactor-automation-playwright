@@ -9,27 +9,6 @@ A UI automation testing framework for the Blankfactor website, built with Playwr
 - **Node.js** - For build tool
 - **dotenv** - Environment configuration management
 
-## Project Structure
-
-```
-blankfactor-automation-playwright/
-├── pages/                      # Page Object Model classes
-│   ├── BasePage.ts            # Base class with common page methods
-│   ├── HomePage.ts            # Home page interactions
-│   ├── ContactPage.ts         # Contact page verifications
-│   ├── IndustriesPage.ts      # Industries page navigation
-│   └── RetirementWealthPage.ts # Retirement & Wealth page actions
-│
-├── tests/                      # Test specifications
-│   
-├── utilities/                  # Test utilities & helpers
-│   └── UITestUtilities.ts     # Custom test fixture with environment setup
-│
-├── .env                        # Environment variables (not tracked)
-├── .env.example               # Environment template
-├── playwright.config.ts       # Playwright configuration
-└── package.json               # Dependencies & scripts
-```
 
 ## Setup Instructions
 
